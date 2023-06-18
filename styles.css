@@ -70,9 +70,10 @@ nav ul li a {
 }
 
 .project-card {
-  background-color: darkorange; /* Set project card background color to dark orange to match accent */
+  background-color: gray; /* Set project card background color to dark orange to match accent */
   padding: 20px;
   margin-bottom: 20px;
+  border-radius: 30px;
 }
 
 /* Contact Section Styles */
