@@ -59,18 +59,18 @@ nav ul li a {
 
 /* About Section Styles */
 #about {
-  background-color: #333; /* Set section background color to dark gray */
+  background-color: #111; /* Set section background color to black */
   padding: 50px;
 }
 
 /* Projects Section Styles */
 #projects {
-  background-color: #444; /* Set section background color to a darker gray */
+  background-color: #111; /* Set section background color to black */
   padding: 50px;
 }
 
 .project-card {
-  background-color: #333; /* Set project card background color to dark gray */
+  background-color: darkorange; /* Set project card background color to dark orange to match accent */
   padding: 20px;
   margin-bottom: 20px;
 }
