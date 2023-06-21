@@ -45,7 +45,6 @@ nav ul li a {
 
 .hero-content {
   animation: fade-in 1.5s ease-out;
-  text-shadow: 2px 2px 2px darkorange;
 }
 
 .hero-content h1 {
