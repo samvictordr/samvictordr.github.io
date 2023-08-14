@@ -40,10 +40,11 @@ nav ul li a {
   background-image: url('hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  padding: 300px;
+  padding: 100px;
 }
 
 .hero-content {
+  visibility: hidden;
   animation: fade-in 1.5s ease-out;
 }
 
