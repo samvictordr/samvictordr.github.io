@@ -38,9 +38,9 @@ nav ul li a {
 /* Hero Section Styles */
 #hero {
   background-image: url('hero-bg.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  padding: 100px;
+  padding: 300px;
 }
 
 .hero-content {
