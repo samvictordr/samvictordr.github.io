@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Set text color to white */
+  background-color: #111; /* Set background color to dark gray */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333; /* Set header background color to black */
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffb7c5;
+  text-decoration: none;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.hero-content {
+  visibility: hidden;
+  animation: fade-in 1.5s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #111; /* Set button background color to black */
+}
+
+/* About Section Styles */
+#about {
+  background-color: #222; /* Set section background color to black */
+  padding: 50px;
+}
+
+/* Projects Section Styles */
+#projects {
+  background-color: #222; /* Set section background color to black */
+  padding: 50px;
+}
+
+.project-card {
+  background-color: #6675a5; /* Set project card background color to dark orange to match accent */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #222; /* Set section background color to black */
+  padding: 50px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  background-color: #222; /* Set input background color to dark gray */
+  border: 1px solid #555; /* Set input border color to a lighter gray */
+}
+
+#contact-form button {
+  background-color: #111; /* Set button background color to black */
+  border: 1px solid #555; /* Set button border color to a lighter gray */
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a:link {
+  color: #ffb7c5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffb7c5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffb7c5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ffb7c5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffb7c5;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffb7c5;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+.fa-3x {
+    padding: 10px
+}
