@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sam Victor</title>
+  <title>Sam's Portfolio</title>
   <link rel="icon" type="image/x-icon" href="Kayoko_Halo.ico">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
@@ -13,9 +13,10 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="toggle-text" data-en="About" data-jp="じこしょうかい">About</a></li>
+        <li><a href="#projects" class="toggle-text" data-en="Interpersonal Skills" data-jp="ソフトスキル">Interpersonal Skills</a></li>
+        <li><a href="#contact" class="toggle-text" data-en="Contact" data-jp="連絡">Contact</a></li>
+        <button id="toggleButton">EN/日本語</button>
       </ul>
     </nav>
   </header>
@@ -30,65 +31,61 @@
 
   <section id="about">
     <div class="container">
-      <h2>About Me / じこしょうかい </h2>
-      <p>My deep fascination with computers and all things tech has been a constant driving force. Even in High School, without formally studying Computer Science, I naturally became the go-to person for all things technical. I took charge of organizing and orchestrating the technical aspects of various events, ensuring each audience was left in awe of the unforgettable experiences we created. Along the way, I honed my troubleshooting skills, tackling hardware faults and code errors with a determined spirit. I've always had a knack for quickly grasping new concepts that pique my interest, fine-tuning my skills with an unwavering commitment. </p>
+      <h2 class="toggle-text" data-en="About Me" data-jp="じこしょうかい">About Me</h2>
+      <p class="toggle-text" data-en="My deep fascination with computers and all things tech has been a constant driving force. Even in High School, without formally studying Computer Science, I naturally became the go-to person for all things technical. I took charge of organizing and orchestrating the technical aspects of various events, ensuring each audience was left in awe of the unforgettable experiences we created. Along the way, I honed my troubleshooting skills, tackling hardware faults and code errors with a determined spirit. I've always had a knack for quickly grasping new concepts that pique my interest, fine-tuning my skills with an unwavering commitment." data-jp="私のコンピューターとテクノロジー全般への深い魅力は、絶えず私を駆り立ててきた要因です。高校時代でも、コンピューターサイエンスを正式に学んでいないにもかかわらず、自然にテクニカルな分野において頼りにされる存在となりました。私は、さまざまなイベントの技術的側面を組織し、指揮する役割を果たし、それぞれの観客が私たちが創り上げる忘れられない体験に感動することを保証しました。その過程で、ハードウェアの障害やコードのエラーに果敢な精神で立ち向かうトラブルシューティングのスキルを磨きました。私は常に、私の興味を引かれる新しい概念を素早く理解し、確固たる意志でスキルを磨いてきました。">My deep fascination with computers and all things tech has been a constant driving force. Even in High School, without formally studying Computer Science, I naturally became the go-to person for all things technical. I took charge of organizing and orchestrating the technical aspects of various events, ensuring each audience was left in awe of the unforgettable experiences we created. Along the way, I honed my troubleshooting skills, tackling hardware faults and code errors with a determined spirit. I've always had a knack for quickly grasping new concepts that pique my interest, fine-tuning my skills with an unwavering commitment.</p>
     </div>
   </section>
 
   <section id="projects">
     <div class="container">
-      <h2>Interpersonal Skills / ソフトスキル: </h2>
+      <h2 class="toggle-text" data-en="Interpersonal Skills:" data-jp="ソフトスキル:">Interpersonal Skills:</h2>
       <div class="project-card">
-        <h3>Team Collaboration</h3>
-        <p> As a someone who enjoys team activities, I tend to be very good at team collaboration and communication.</p> 
+        <h3 class="toggle-text" data-en="Team Collaboration" data-jp="チーム協力">Team Collaboration</h3>
+        <p class="toggle-text" data-en="As a someone who enjoys team activities, I tend to be very good at team collaboration and communication." data-jp="チーム活動が好きな私は、チーム協力とコミュニケーションにおいて非常に優れていると考えています。"> As a someone who enjoys team activities, I tend to be very good at team collaboration and communication.</p> 
       </div>
       <div class="project-card">
-        <h3>Adaptability</h3>
-        <p> In the rapidly improving era of modern technology, adaptability is a necessity.</p>
+        <h3 class="toggle-text" data-en="Adaptability" data-jp="適応力">Adaptability</h3>
+        <p class="toggle-text" data-en="The capacity to adapt in the modern era is a necessity, I have hosted and orchestrated multiple events in unique situations, so my ability to adapt exceeds modern expectations." data-jp="現代の時代において適応する能力は必要不可欠です。私は独自の状況で複数のイベントを主催し、編成してきました。そのため、私の適応力は現代の期待を超えています。">The capacity to adapt in the modern era is a necessity, I have hosted and orchestrated multiple events in unique situations, so my ability to adapt exceeds modern expectations.</p>
       </div>
       <div class="project-card">
-        <h3>Conflict Resolution</h3>
-        <p> Conflicts are unavoidable with high pressure situations. My low temper allows clarity in thought to navigate and resolve conflicts with ease.</p>
+        <h3 class="toggle-text" data-en="Ability to Resolve Conflicts" data-jp="対立解決能力">Ability to Resolve Conflicts</h3>
+        <p class="toggle-text" data-en="Conflicts are unavoidable with high pressure situations. My low temper allows clarity in thought to navigate and resolve conflicts with ease." data-jp="高圧状況下では対立は避けられません。私の冷静な性格は、考えを整理し、対立をスムーズに航海し解決するための明確さを提供します。"> Conflicts are unavoidable with high pressure situations. My low temper allows clarity in thought to navigate and resolve conflicts with ease.</p>
       </div>
       <div class="project-card">
-        <h3>Continuous Learning</h3>
-        <p> As an extention to my skill to adapt, I am also a very quick learner. </p>
-      </div>
-      <div class="project-card">
-        <h3>A Fun-Loving and Serious Person</h3>
-        <p> As part of my personal philosophy, I think it's vital to let loose every once in a while, while strictly maintaining a forward sight in the needed situations. This trait directly contributes towards a healthy workspace. </p>
+        <h3 class="toggle-text" data-en="Continuous Learning" data-jp="迅速な学習能力">Continuous Learning</h3>
+        <p class="toggle-text" data-en="As an extention to my skill to adapt, I am also a very quick learner. " data-jp="適応力を持つ能力の拡張として、私は非常に素早い学習者でもあります。"> As an extention to my skill to adapt, I am also a very quick learner. </p>
       </div>
   </section>
 
   <section id="contact">
   <div class="container">
-    <h2>Contact</h2>
-    <h3>Email: </h3>
+    <h2 class="toggle-text" data-en="Contact" data-jp="連絡">Contact</h2>
+    <h3 class="toggle-text" data-en="Email:" data-jp="電子メール:">Email: </h3>
     <p>samvictordr@outlook.com</p>
     <!-- Social Media Links -->
-    <h3>Social Media: </h3>
+    <h3 class="toggle-text" data-en="Social Media:" data-jp="ソーシャルメディア:">Social Media: </h3>
     <div class="social-links">
         <p>
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
             <a href="https://www.linkedin.com/in/sam-victor-a52b36279/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-2xl"></i>
                  Linkedin
             </a>
         </p>
-        <p>  
+        <p> 
+            <i class="fa-brands fa-github fa-2xl"></i>
             <a href="https://github.com/samvictordr" target="_blank">
-                <i class="fa-brands fa-github fa-2xl"></i>
                 Github
             </a>
         </p>
         <p>
-            <a href="https://twitter.com/samvkei" target="_blank">
-                <i class="fa-brands fa-x-twitter fa-2xl"></i>
+            <i class="fa-brands fa-x-twitter fa-2xl"></i>
+            <a href="https://twitter.com/samvkei" target="_blank" class="toggle-text" data-en="Twitter/X" data-jp="ツイッター/X">
                 Twitter/X
             </a>
         </p>
         <p>
-            <a href="https://discord.gg/jRXBd43U8H" target="_blank">
-                <i class="fa-brands fa-discord fa-xl"></i>
+            <i class="fa-brands fa-discord fa-xl"></i>
+            <a href="https://discord.gg/jRXBd43U8H" target="_blank" class="toggle-text" data-en="Join my Discord Server" data-jp="俺のDiscordサーバーに参加してくれ！">
                 Join my Discord Server!
             </a>
         </p>
