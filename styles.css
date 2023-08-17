@@ -1,10 +1,9 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #fff; /* Set text color to white */
-  background-color: #111; /* Set background color to dark gray */
+  color: #fff;
+  background-color: #111;
 }
 
 .container {
@@ -13,9 +12,8 @@ body {
   padding: 20px;
 }
 
-/* Header Styles */
 header {
-  background-color: #333; /* Set header background color to black */
+  background-color: #333;
   padding: 20px;
 }
 
@@ -35,12 +33,12 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Hero Section Styles */
 #hero {
   background-image: url('hero-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px;
+  animation: fade-in 1.5s ease-out;
 }
 
 .hero-content {
@@ -54,43 +52,81 @@ nav ul li a {
 }
 
 .cta-button {
-  background-color: #111; /* Set button background color to black */
+  background-color: #111;
 }
 
-/* About Section Styles */
 #about {
-  background-color: #222; /* Set section background color to black */
+  background-color: #222;
   padding: 50px;
 }
 
-/* Projects Section Styles */
 #projects {
-  background-color: #222; /* Set section background color to black */
+  background-color: #222;
   padding: 50px;
 }
 
 .project-card {
-  background-color: #6675a5; /* Set project card background color to dark orange to match accent */
+  background-color: #6675a5;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 30px;
 }
 
-/* Contact Section Styles */
 #contact {
-  background-color: #222; /* Set section background color to black */
+  background-color: #222;
   padding: 50px;
 }
 
 #contact-form input,
 #contact-form textarea {
-  background-color: #222; /* Set input background color to dark gray */
-  border: 1px solid #555; /* Set input border color to a lighter gray */
+  background-color: #222;
+  border: 1px solid #555;
 }
 
 #contact-form button {
-  background-color: #111; /* Set button background color to black */
-  border: 1px solid #555; /* Set button border color to a lighter gray */
+  background-color: #111;
+  border: 1px solid #555;
+}
+
+#toggleButton {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#toggleButton:hover {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul #toggleButton {
+  margin-left: auto;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul #toggleButton:hover {
+  background-color: #333;
+  color: #f0f0f0;
 }
 
 /* Animations */
