@@ -5,3 +5,5 @@
   * Comment out Portfolio and skills for building
   * Update Japanese translatations
   * Update reference links for footer hyperlinks
+* 23rd November, 2023 -
+  * Upload Legacy Website files and about page
