@@ -7,3 +7,6 @@
   * Update reference links for footer hyperlinks
 * 23rd November, 2023 -
   * Upload Legacy Website files and about page
+* 26th January, 2024 -
+  * Switching hosting from github-pages to Azure Web App service
+  * CI/CD Action added to core repo
