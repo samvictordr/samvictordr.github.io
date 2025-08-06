@@ -79,19 +79,22 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
   for (let i = 0; i < filterItems.length; i++) {
+    // Get all categories for this item, split by comma, trim, and lowercase
+    const categories = filterItems[i].dataset.category
+      .split(',')
+      .map(cat => cat.trim().toLowerCase());
 
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    // Show if "all" is selected or if any category matches the selected value
+    if (
+      selectedValue === "all" ||
+      categories.some(cat => cat === selectedValue)
+    ) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
-
 }
 
 // add event in all filter button items for large screen
