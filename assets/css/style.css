@@ -18,9 +18,7 @@
   --sage-dark:    #3D6B32;
   --sage-stripe:  #7BAF6E;
 
-  /* Warm secondaries — pulled from the VHS stripe stack */
-  --amber:        #C4882A;
-  --rust:         #B85C38;
+  /* Warm secondaries */
   --cream:        #E8E2D4;
 
   /* Type colors */
@@ -141,7 +139,7 @@ body {
 }
 
 .stripe          { height: 8px; width: 100%; }
-.stripe-1        { background: var(--amber); }
+.stripe-1        { background: var(--sage-light); }
 .stripe-2        { background: var(--sage-stripe); }
 .stripe-3        { background: var(--sage); }
 .stripe-4        { background: var(--sage-dark); }
@@ -151,9 +149,9 @@ body {
   height: 6px;
   background: linear-gradient(
     to right,
-    var(--sage-stripe) 0%, var(--sage-stripe) 40%,
-    var(--amber) 40%, var(--amber) 60%,
-    var(--rust) 60%, var(--rust) 80%,
+    var(--sage-light) 0%, var(--sage-light) 30%,
+    var(--sage-stripe) 30%, var(--sage-stripe) 55%,
+    var(--sage) 55%, var(--sage) 80%,
     var(--sage-dark) 80%, var(--sage-dark) 100%
   );
   max-width: 200px;
@@ -268,7 +266,7 @@ body {
 
 .nav-tab.active {
   color: var(--text-dark);
-  border-bottom-color: var(--amber);
+  border-bottom-color: var(--sage);
 }
 
 
@@ -388,9 +386,9 @@ body {
   height: 20px;
   background: linear-gradient(
     to bottom,
-    var(--amber)       0px,  var(--amber)       5px,
-    var(--rust)        5px,  var(--rust)         10px,
-    var(--sage-stripe) 10px, var(--sage-stripe)  15px,
+    var(--sage-light)  0px,  var(--sage-light)   5px,
+    var(--sage-stripe)  5px, var(--sage-stripe)  10px,
+    var(--sage)        10px, var(--sage)         15px,
     var(--sage-dark)   15px, var(--sage-dark)    20px
   );
 }
@@ -521,9 +519,9 @@ article.active {
   height: 16px;
   background: linear-gradient(
     to bottom,
-    var(--amber)       0px,  var(--amber)       4px,
-    var(--sage-stripe) 4px,  var(--sage-stripe)  8px,
-    var(--sage)        8px,  var(--sage)         12px,
+    var(--sage-light)  0px,  var(--sage-light)   4px,
+    var(--sage-stripe)  4px, var(--sage-stripe)   8px,
+    var(--sage)         8px, var(--sage)         12px,
     var(--sage-dark)   12px, var(--sage-dark)    16px
   );
 }
