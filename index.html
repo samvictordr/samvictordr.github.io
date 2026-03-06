@@ -20,9 +20,10 @@
   <!--
     - google font link
   -->
+  <meta name="theme-color" content="#121212">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,100 +40,111 @@
 
     <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Sam Victor" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Sam Victor</h1>
-
-          <p class="title">DevOps & Bioinformatics Engineer</p>
+      <div class="os-window-titlebar">
+        <div class="os-window-controls">
+          <span class="os-btn os-btn-close"></span>
+          <span class="os-btn os-btn-min"></span>
+          <span class="os-btn os-btn-max"></span>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <span class="os-window-title">USER_PROFILE.DAT</span>
+        <span class="os-window-meta">[ SYS: OK ]</span>
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="os-window-body">
 
-        <div class="separator"></div>
+        <div class="sidebar-info">
 
-        <ul class="contacts-list">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Sam Victor" width="80">
+          </figure>
 
-          <li class="contact-item">
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Sam Victor</h1>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <p class="title">DevOps & Bioinformatics Engineer</p>
+          </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-              <a href="mailto:samvictor@tutamail.com" class="contact-link">samvictor@tutamail.com</a>
-            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
 
-          </li>
+        </div>
 
-          <li class="contact-item">
+        <div class="sidebar-info_more">
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+          <div class="separator"></div>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+          <ul class="contacts-list">
 
-              <time datetime="2005-08-18">August 18, 2005</time>
-            </div>
+            <li class="contact-item">
 
-          </li>
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title contact-label">Email</p>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+                <a href="mailto:samvictor@tutamail.com" class="contact-link">samvictor@tutamail.com</a>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+            </li>
 
-              <address>Coimbatore, Tamil Nadu - India</address>
-            </div>
+            <li class="contact-item">
 
-          </li>
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-        </ul>
+              <div class="contact-info">
+                <p class="contact-title contact-label">Birthday</p>
 
-        <div class="separator"></div>
+                <time datetime="2005-08-18">August 18, 2005</time>
+              </div>
 
-        <ul class="social-list">
+            </li>
 
-          <li class="social-item">
-            <a href="https://github.com/samvictordr" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
+            <li class="contact-item">
 
-          <li class="social-item">
-            <a href="https://mastodon.social/@matchaswirls" class="social-link">
-              <ion-icon name="logo-mastodon"></ion-icon>
-            </a>
-          </li>
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-        </ul>
+              <div class="contact-info">
+                <p class="contact-title contact-label">Location</p>
+
+                <address>Coimbatore, Tamil Nadu - India</address>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+
+            <li class="social-item">
+              <a href="https://github.com/samvictordr" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://mastodon.social/@matchaswirls" class="social-link">
+                <ion-icon name="logo-mastodon"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
 
       </div>
 
     </aside>
-
-
-
 
 
     <!--
@@ -145,32 +157,35 @@
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+      <nav class="os-menubar">
 
-        <ul class="navbar-list">
+        <div class="menubar-brand">
+          <span class="brand-bracket">[</span>
+          <span class="brand-name">MATCHAOS</span>
+          <span class="brand-bracket">]</span>
+        </div>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+        <ul class="menubar-list">
+
+          <li>
+            <button class="menubar-item active" data-nav-link>About</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+          <li>
+            <button class="menubar-item" data-nav-link>Resume</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+          <li>
+            <button class="menubar-item" data-nav-link>Portfolio</button>
           </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
 
         </ul>
 
+        <div class="menubar-right">
+          <span class="menubar-status">&#9646; READY</span>
+        </div>
+
       </nav>
-
-
-
 
 
       <!--
@@ -179,130 +194,192 @@
 
       <article class="about  active" data-page="about">
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+        <div class="os-window-titlebar">
+          <div class="os-window-controls">
+            <span class="os-btn os-btn-close"></span>
+            <span class="os-btn os-btn-min"></span>
+            <span class="os-btn os-btn-max"></span>
+          </div>
+          <span class="os-window-title">ABOUT.SYS</span>
+          <span class="os-window-meta">[ SYS: OK ]</span>
+        </div>
 
-        <section class="about-text">
-          <p>
-            
-          </p>
-            Greetings visitor. My name is Sam Victor, a DevOps & Bioinformatics Engineer with a passion for creating efficient and scalable systems. With a strong background in both development and operations, I specialize in automating processes, optimizing workflows, and ensuring seamless integration between software development and IT operations.
-        </section>
+        <div class="os-window-body">
 
+          <header>
+            <h2 class="h2 article-title"><span class="title-inner">About me</span></h2>
+          </header>
 
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What am I good at?</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">DevOps & Cloud Engineering</h4>
-
-                <p class="service-item-text">
-                  CI/CD pipelines (GitHub Actions, Docker, Kubernetes), AWS (S3, EBS, RDS, Lambda), Azure (AZ-104 level concepts), 
-                  Infrastructure as Code (NixOS, declarative environments)
-                </p>
+          <section class="about-text">
+            <div class="terminal-block">
+              <div class="terminal-block-header">
+                <span>// PROFILE.SYS</span>
+                <span class="terminal-meta">READ-ONLY</span>
               </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bioinformatics & Computational Biology</h4>
-
-                <p class="service-item-text">
-                  Genomics data analysis (differential gene expression, meta-analysis), Coral health genomics (stress resilience, symbiont data integration), Signal analysis and spectroscopy (astrobiology applications)
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Programming & Tools</h4>
-
-                <p class="service-item-text">
-                  Data Pipelines and Streamlit rapid app creation using python, NixOS for reproducible environments, Git, IaC Platforms (Terraform, Bicep, Nix Flakes) Docker, Kubernetes orchestration.
-
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Research & Conceptual Strengths</h4>
-
-                <p class="service-item-text">
-                  Marine Genomics and focus/keen interest in eDNA sampling, signal analysis, Cross-domain thinking; bridging biology, data science, and cloud systems, Theoretical depth: ability to integrate philosophy/psychology into research narratives.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-        
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
+              <div class="terminal-block-body">
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  Greetings visitor. My name is Sam Victor, a DevOps &amp; Bioinformatics Engineer with a passion for creating efficient and scalable systems. With a strong background in both development and operations, I specialize in automating processes, optimizing workflows, and ensuring seamless integration between software development and IT operations.
                 </p>
               </div>
-
             </div>
+          </section>
+
+
+          <!--
+            - service
+          -->
+
+          <section class="service">
+
+            <h3 class="h3 service-title">What am I good at?</h3>
+
+            <ul class="service-list">
+
+              <li class="service-item" data-tag="[SYS]">
+
+                <div class="os-window-titlebar">
+                  <div class="os-window-controls">
+                    <span class="os-btn os-btn-close"></span>
+                    <span class="os-btn os-btn-min"></span>
+                    <span class="os-btn os-btn-max"></span>
+                  </div>
+                  <span class="os-window-title">[SYS] DEVOPS</span>
+                  <span class="os-window-meta">[ LOADED ]</span>
+                </div>
+
+                <div class="os-window-body">
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">DevOps & Cloud Engineering</h4>
+
+                    <p class="service-item-text">
+                      CI/CD pipelines (GitHub Actions, Docker, Kubernetes), AWS (S3, EBS, RDS, Lambda), Azure (AZ-104 level concepts), 
+                      Infrastructure as Code (NixOS, declarative environments)
+                    </p>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="service-item" data-tag="[BIO]">
+
+                <div class="os-window-titlebar">
+                  <div class="os-window-controls">
+                    <span class="os-btn os-btn-close"></span>
+                    <span class="os-btn os-btn-min"></span>
+                    <span class="os-btn os-btn-max"></span>
+                  </div>
+                  <span class="os-window-title">[BIO] BIOINFO</span>
+                  <span class="os-window-meta">[ LOADED ]</span>
+                </div>
+
+                <div class="os-window-body">
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Bioinformatics & Computational Biology</h4>
+
+                    <p class="service-item-text">
+                      Genomics data analysis (differential gene expression, meta-analysis), Coral health genomics (stress resilience, symbiont data integration), Signal analysis and spectroscopy (astrobiology applications)
+                    </p>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="service-item" data-tag="[CODE]">
+
+                <div class="os-window-titlebar">
+                  <div class="os-window-controls">
+                    <span class="os-btn os-btn-close"></span>
+                    <span class="os-btn os-btn-min"></span>
+                    <span class="os-btn os-btn-max"></span>
+                  </div>
+                  <span class="os-window-title">[CODE] TOOLS</span>
+                  <span class="os-window-meta">[ LOADED ]</span>
+                </div>
+
+                <div class="os-window-body">
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Programming & Tools</h4>
+
+                    <p class="service-item-text">
+                      Data Pipelines and Streamlit rapid app creation using python, NixOS for reproducible environments, Git, IaC Platforms (Terraform, Bicep, Nix Flakes) Docker, Kubernetes orchestration.
+                    </p>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="service-item" data-tag="[RES]">
+
+                <div class="os-window-titlebar">
+                  <div class="os-window-controls">
+                    <span class="os-btn os-btn-close"></span>
+                    <span class="os-btn os-btn-min"></span>
+                    <span class="os-btn os-btn-max"></span>
+                  </div>
+                  <span class="os-window-title">[RES] RESEARCH</span>
+                  <span class="os-window-meta">[ LOADED ]</span>
+                </div>
+
+                <div class="os-window-body">
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Research & Conceptual Strengths</h4>
+
+                    <p class="service-item-text">
+                      Marine Genomics and focus/keen interest in eDNA sampling, signal analysis, Cross-domain thinking; bridging biology, data science, and cloud systems, Theoretical depth: ability to integrate philosophy/psychology into research narratives.
+                    </p>
+                  </div>
+                </div>
+
+              </li>
+
+            </ul>
 
           </section>
+          
+
+          <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              </div>
+
+              <div class="modal-content">
+
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+
+            </section>
+
+          </div>
 
         </div>
 
-
-       
-
       </article>
-
-
-
 
 
       <!--
@@ -311,132 +388,159 @@
 
       <article class="resume" data-page="resume">
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+        <div class="os-window-titlebar">
+          <div class="os-window-controls">
+            <span class="os-btn os-btn-close"></span>
+            <span class="os-btn os-btn-min"></span>
+            <span class="os-btn os-btn-max"></span>
+          </div>
+          <span class="os-window-title">RESUME.DAT</span>
+          <span class="os-window-meta">[ SYS: OK ]</span>
+        </div>
 
-        <section class="timeline">
+        <div class="os-window-body">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <header>
+            <h2 class="h2 article-title"><span class="title-inner">Resume</span></h2>
+          </header>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sri Eshwar College of Engineering</h4>
 
-              <h4 class="h4 timeline-item-title">Sri Eshwar College of Engineering</h4>
+                <span class="timeline-date">2023 — 2027, Bachelor of Computer Science</span>
 
-              <span>2023 — 2027, Bachelor of Computer Science</span>
+                <p class="timeline-text">
+                  Took up major courses in Computer Science, including software engineering protocols, agile development, and cloud computing.
+                </p>
 
-              <p class="timeline-text">
-                Took up major courses in Computer Science, including software engineering protocols, agile development, and cloud computing.
-              </p>
+              </li>
 
-            </li>
+            </ol>
 
-          </ol>
+          </section>
 
-        </section>
+          <section class="timeline">
 
-        <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
 
-            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">DevOps Intern @ Elevate Labs</h4>
 
-              <h4 class="h4 timeline-item-title">DevOps Intern @ Elevate Labs</h4>
+                <span class="timeline-date">August 4, 2025 — Present</span>
 
-              <span>August 4, 2025 — Present</span>
+                <p class="timeline-text">
+                  Assisting in the development and deployment of CI/CD pipelines, automated testing, and infrastructure management using tools like Docker and Kubernetes.
+                </p>
 
-              <p class="timeline-text">
-                Assisting in the development and deployment of CI/CD pipelines, automated testing, and infrastructure management using tools like Docker and Kubernetes.
-              </p>
+              </li>
 
-            </li>
+            </ol>
 
-          </ol>
+          </section>
 
-        </section>
+          <section class="skill">
 
-        <section class="skill">
+            <span class="skill-loading-label">[ LOADING SKILL_MATRIX.LOG... ]</span>
 
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Azure Architecture</h5>
-                <data value="80">80%</data>
+            <div class="os-window skill-window">
+              <div class="os-window-titlebar">
+                <div class="os-window-controls">
+                  <span class="os-btn os-btn-close"></span>
+                  <span class="os-btn os-btn-min"></span>
+                  <span class="os-btn os-btn-max"></span>
+                </div>
+                <span class="os-window-title">SKILL_MATRIX.LOG</span>
+                <span class="os-window-meta">[ SYS: OK ]</span>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+              <div class="os-window-body">
+
+                <ul class="skills-list">
+
+                  <li class="skills-item">
+
+                    <div class="title-wrapper">
+                      <h5 class="h5">Azure Architecture</h5>
+                      <data value="80">80%</data>
+                    </div>
+
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 80%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+
+                    <div class="title-wrapper">
+                      <h5 class="h5">Linux Administration and CI/CD</h5>
+                      <data value="70">70%</data>
+                    </div>
+
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 70%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+
+                    <div class="title-wrapper">
+                      <h5 class="h5">IT Infrastructure Modelling</h5>
+                      <data value="90">90%</data>
+                    </div>
+
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 90%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+
+                    <div class="title-wrapper">
+                      <h5 class="h5">Bioinformatics and COmputational Biology</h5>
+                      <data value="75">75%</data>
+                    </div>
+
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 75%;"></div>
+                    </div>
+
+                  </li>
+
+                </ul>
+
               </div>
+            </div>
 
-            </li>
+          </section>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Linux Administration and CI/CD</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">IT Infrastructure Modelling</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Bioinformatics and COmputational Biology</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
+        </div>
 
       </article>
-
-
-
 
 
       <!--
@@ -445,94 +549,135 @@
 
       <article class="portfolio" data-page="portfolio">
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+        <div class="os-window-titlebar">
+          <div class="os-window-controls">
+            <span class="os-btn os-btn-close"></span>
+            <span class="os-btn os-btn-min"></span>
+            <span class="os-btn os-btn-max"></span>
+          </div>
+          <span class="os-window-title">PROJECTS.DIR</span>
+          <span class="os-window-meta">[ SYS: OK ]</span>
+        </div>
 
-        <section class="projects">
+        <div class="os-window-body">
 
-          <ul class="filter-list">
+          <header>
+            <h2 class="h2 article-title"><span class="title-inner">Portfolio</span></h2>
+          </header>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+          <section class="projects">
 
-            <li class="filter-item">
-              <button data-filter-btn>Computational Biology</button>
-            </li>
+            <ul class="filter-list">
 
-            <li class="filter-item">
-              <button data-filter-btn>Genomics</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Computational Biology</button>
+              <li class="filter-item">
+                <button data-filter-btn>Computational Biology</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Genomics</button>
+              <li class="filter-item">
+                <button data-filter-btn>Genomics</button>
               </li>
 
             </ul>
 
-          </div>
+            <div class="filter-select-box">
 
-          <ul class="project-list">
+              <button class="filter-select" data-select>
 
-            <li class="project-item active" data-filter-item data-category="Computational Biology">
-              <a href="https://github.com/samvictordr/reefgene-exp-sim">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                <div class="select-value" data-selecct-value>Select category</div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="select-list">
+
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Computational Biology</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Genomics</button>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <ul class="project-list">
+
+              <li class="project-item active" data-filter-item data-category="Computational Biology">
+                <a href="https://github.com/samvictordr/reefgene-exp-sim">
+
+                  <div class="os-window">
+                    <div class="os-window-titlebar">
+                      <div class="os-window-controls">
+                        <span class="os-btn os-btn-close"></span>
+                        <span class="os-btn os-btn-min"></span>
+                        <span class="os-btn os-btn-max"></span>
+                      </div>
+                      <span class="os-window-title">PROJ_001.EXE</span>
+                      <span class="os-window-meta">[ RUN ]</span>
+                    </div>
+
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-1.jpg" alt="Coral Gene expressions simulator" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Coral Gene expressions simulator</h3>
+                    <p class="project-category">Computational Biology</p>
                   </div>
-                  <img src="./assets/images/project-1.jpg" alt="Coral Gene expressions simulator" loading="lazy">
-                </figure>
-                <h3 class="project-title">Coral Gene expressions simulator</h3>
-                <p class="project-category">Computational Biology</p>
-              </a>
-            </li>
 
-            <li class="project-item active" data-filter-item data-category="Genomics">
-              <a href="https://github.com/samvictordr/gene-mut-tracker">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="Genomics">
+                <a href="https://github.com/samvictordr/gene-mut-tracker">
+
+                  <div class="os-window">
+                    <div class="os-window-titlebar">
+                      <div class="os-window-controls">
+                        <span class="os-btn os-btn-close"></span>
+                        <span class="os-btn os-btn-min"></span>
+                        <span class="os-btn os-btn-max"></span>
+                      </div>
+                      <span class="os-window-title">PROJ_002.EXE</span>
+                      <span class="os-window-meta">[ RUN ]</span>
+                    </div>
+
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-2.png" alt="Gene Mutations Tracking and Analysis Portal" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Gene Mutations Tracking and Analysis Portal</h3>
+                    <p class="project-category">Genomics</p>
                   </div>
-                  <img src="./assets/images/project-2.png" alt="Gene Mutations Tracking and Analysis Portal" loading="lazy">
-                </figure>
-                <h3 class="project-title">Gene Mutations Tracking and Analysis Portal</h3>
-                <p class="project-category">Genomics</p>
-              </a>
-            </li>
 
-          </ul>
+                </a>
+              </li>
 
-        </section>
+            </ul>
+
+          </section>
+
+        </div>
 
       </article>
-
-
-
 
 
       <!--
@@ -728,8 +873,19 @@
   </main>
 
 
+  <!--
+    - #STATUS BAR
+  -->
 
-
+  <div class="os-statusbar">
+    <span class="status-item status-ok">&#9679; SYS ONLINE</span>
+    <span class="status-item">CPU: 12%</span>
+    <span class="status-item">MEM: 3.2GB / 16GB</span>
+    <span class="status-item">LOC: COIMBATORE, IN</span>
+    <span class="status-spacer"></span>
+    <span class="status-item status-accent">MATCHA OS v2.6.1</span>
+    <span class="status-item" id="os-clock">00:00:00</span>
+  </div>
 
 
   <!--
@@ -742,6 +898,20 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!--
+    - clock script
+  -->
+  <script>
+    (function() {
+      function tick() {
+        var el = document.getElementById('os-clock');
+        if (el) el.textContent = new Date().toLocaleTimeString('en-GB');
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
 
 </body>
 
